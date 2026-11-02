@@ -35,15 +35,15 @@ export function Reveal({
 
   const hiddenStyles: Record<string, string> = {
     up: 'opacity-0 translate-y-12',
-    left: 'opacity-0 -translate-x-12',
-    right: 'opacity-0 translate-x-12',
+    left: 'opacity-0 translate-y-12 sm:-translate-x-12',
+    right: 'opacity-0 translate-y-12 sm:translate-x-12',
     scale: 'opacity-0 scale-95',
   };
 
   const visibleStyles: Record<string, string> = {
     up: 'opacity-100 translate-y-0',
-    left: 'opacity-100 translate-x-0',
-    right: 'opacity-100 translate-x-0',
+    left: 'opacity-100 translate-y-0 sm:translate-x-0',
+    right: 'opacity-100 translate-y-0 sm:translate-x-0',
     scale: 'opacity-100 scale-100',
   };
 
