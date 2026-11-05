@@ -14,11 +14,11 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://checkmyvan.com'),
   title: {
-    default: 'CheckMyVan — Van, Campervan & Motorhome Inspections',
+    default: 'CheckMyVan — Digital PDF Vehicle Reports',
     template: '%s | CheckMyVan',
   },
   description:
-    'Specialist UK inspections for vans, campervans, and motorhomes. Choose pre-purchase, safety, diagnostic, or habitation checks and receive a clear digital report.',
+    'Digital PDF Reports for vans, campervans, and motorhomes. Choose pre-purchase, safety, diagnostics, or habitation topics and receive your report by email. No physical inspection included.',
   alternates: {
     canonical: '/',
   },
@@ -26,28 +26,28 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     siteName: 'CheckMyVan',
-    title: 'CheckMyVan — Van, Campervan & Motorhome Inspections',
+    title: 'CheckMyVan — Digital PDF Vehicle Reports',
     description:
-      'Specialist UK inspections for vans, campervans, and motorhomes. Choose pre-purchase, safety, diagnostic, or habitation checks and receive a clear digital report.',
+      'Digital PDF Reports for vans, campervans, and motorhomes. Choose pre-purchase, safety, diagnostics, or habitation topics and receive your report by email. No physical inspection included.',
     url: 'https://checkmyvan.com',
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'CheckMyVan — independent van, campervan and motorhome inspections',
+        alt: 'CheckMyVan — Digital PDF Reports for vans, campervans and motorhomes',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CheckMyVan — Van, Campervan & Motorhome Inspections',
+    title: 'CheckMyVan — Digital PDF Vehicle Reports',
     description:
-      'Specialist UK inspections for vans, campervans, and motorhomes. Choose pre-purchase, safety, diagnostic, or habitation checks and receive a clear digital report.',
+      'Digital PDF Reports for vans, campervans, and motorhomes. Choose pre-purchase, safety, diagnostics, or habitation topics and receive your report by email. No physical inspection included.',
     images: [
       {
         url: '/opengraph-image',
-        alt: 'CheckMyVan — independent van, campervan and motorhome inspections',
+        alt: 'CheckMyVan — Digital PDF Reports for vans, campervans and motorhomes',
       },
     ],
   },

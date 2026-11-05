@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'How CheckMyVan collects, uses, and protects personal data when you book an inspection for a van, campervan, or motorhome.',
+    'How CheckMyVan collects, uses, and protects personal data when you order a Digital PDF Report.',
   alternates: { canonical: '/privacy-policy' },
   robots: { index: true, follow: true },
 };
@@ -19,9 +19,9 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">1. Who We Are</h2>
             <p>
-              CheckMyVan provides inspections for vans, campervans, and motorhomes
-              to individuals, dealerships, and fleet operators across the United
-              Kingdom. You can contact us at info@checkmyvan.com.
+              CheckMyVan provides Digital PDF Reports for vans, campervans, and
+              motorhomes. We do not provide physical inspections or vehicle testing.
+              You can contact us at info@checkmyvan.com.
             </p>
           </section>
 
@@ -29,8 +29,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-xl font-bold font-display text-navy mb-3">2. Information We Collect</h2>
             <p>We collect the following types of personal information when you use our services:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li><strong className="text-navy">Booking details:</strong> your name, email address, phone number, vehicle type, make, model, year, and VIN or chassis number.</li>
-              <li><strong className="text-navy">Location data:</strong> the address where you request a mobile check.</li>
+              <li><strong className="text-navy">Order details:</strong> your name, email address, phone number, vehicle type, and any vehicle details you provide for your report.</li>
               <li><strong className="text-navy">Payment information:</strong> processed securely through our payment provider. We do not store full card details.</li>
               <li><strong className="text-navy">Correspondence:</strong> messages you send us through our contact form, email, or phone.</li>
             </ul>
@@ -39,7 +38,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">3. How We Use Your Information</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>To schedule and perform your van, campervan, or motorhome inspection.</li>
+              <li>To process your Digital PDF Report order using the details you provide.</li>
               <li>To deliver your Digital PDF Report by email.</li>
               <li>To communicate with you about your booking and answer your questions.</li>
               <li>To improve our services and website based on your feedback.</li>
@@ -50,16 +49,17 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">4. How We Share Your Information</h2>
             <p>
-              We do not sell your personal data. We share information only with the technician
-              assigned to your check and our payment processor. We may disclose information
-              if required by law.
+              We do not sell your personal data. We share information with our
+              payment and email service providers as needed to process your order
+              and deliver your Digital PDF Report. We may disclose information if
+              required by law.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">5. Data Retention</h2>
             <p>
-              We retain your booking and check records for as long as necessary to provide
+              We retain your order and report records for as long as necessary to provide
               our services and comply with legal obligations. You may request deletion of your
               personal data at any time, subject to legal retention requirements.
             </p>

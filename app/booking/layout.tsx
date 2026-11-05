@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Book Your Van or Leisure Vehicle Check Online — CheckMyVan UK',
+  title: 'Order a Digital PDF Vehicle Report — CheckMyVan',
   description:
-    'Book a check for your van, campervan, or motorhome. Choose a service, enter your vehicle details, and review your booking online.',
+    'Order a Digital PDF Report for your van, campervan, or motorhome. Enter your vehicle details and complete your order online. No physical inspection included.',
   alternates: { canonical: '/booking' },
   openGraph: {
-    title: 'Book Your Van or Leisure Vehicle Check Online | CheckMyVan',
+    title: 'Order a Digital PDF Vehicle Report | CheckMyVan',
     description:
-      'Choose a vehicle check service, enter your vehicle details, and review your booking online.',
+      'Choose a Digital PDF Report, enter your vehicle details, and complete your order online. Physical inspection is not included.',
     url: 'https://checkmyvan.com/booking',
     images: ['/opengraph-image'],
   },

@@ -9,38 +9,38 @@ const slides = [
   {
     image:
       'https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
-    alt: 'Couple enjoying a road trip in a campervan on a scenic coastline',
-    eyebrow: 'Van Inspections',
-    title: 'Know Your Van Inside Out',
+    alt: 'Campervan on a scenic coastline',
+    eyebrow: 'Digital PDF Vehicle Reports',
+    title: 'Vehicle Information, Delivered Digitally',
     description:
-      'Get a clear, independent assessment of your van before you buy, sell, or set off. We check the key mechanical, safety, and bodywork details.',
+      'Choose a report for your van, campervan, or motorhome and receive a clear Digital PDF. No physical inspection or technician visit is included.',
   },
   {
     image:
-      'https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
-    alt: 'Mechanic inspecting a van engine in a workshop',
-    eyebrow: 'Campervan Inspections',
-    title: 'Confidence for Every Journey',
+      'https://images.pexels.com/photos/594384/van-vw-travel-trip.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
+    alt: 'Campervan ready for a journey',
+    eyebrow: 'Digital Campervan Reports',
+    title: 'Clear Information Before You Decide',
     description:
-      'From the base vehicle to its fitted equipment, our campervan checks help you understand condition, identify concerns, and plan your next steps.',
+      'Explore digital report topics for your campervan and get your selected PDF report by email.',
   },
   {
     image:
       'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
     alt: 'Motorhome parked in a tranquil forest setting',
-    eyebrow: 'Motorhome Checks',
-    title: 'Checks for the Vehicle and Living Space',
+    eyebrow: 'Digital Motorhome Reports',
+    title: 'Report Options for Motorhomes',
     description:
-      'Choose a motorhome inspection with a habitation check for its mechanical systems and living space.',
+      'Choose a vehicle or habitation report covering the topics most relevant to your motorhome.',
   },
   {
     image:
-      'https://images.pexels.com/photos/6870309/pexels-photo-6870309.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
-    alt: 'Technician using diagnostic equipment on a vehicle',
+      'https://images.pexels.com/photos/2580312/pexels-photo-2580312.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
+    alt: 'Van on the road',
     eyebrow: 'Clear Digital Reports',
-    title: 'Straightforward Findings. Better Decisions.',
+    title: 'A Clear Digital PDF Report',
     description:
-      'Get an easy-to-understand report with inspection findings and photos, tailored to the vehicle you are having checked.',
+      'Order online and receive a Digital PDF Report within 1 hour. Reports provide information only and do not assess a vehicle in person.',
   },
 ];
 
@@ -123,7 +123,7 @@ export function HeroCarousel() {
                 href="/booking"
                 className="inline-flex flex-1 items-center justify-center px-2 py-2.5 sm:flex-none sm:px-8 sm:py-4 rounded-xl bg-primary text-white font-semibold text-xs sm:text-base shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
               >
-                Book Your Check
+                Order Your Report
               </a>
               <a
                 href="/pricing"

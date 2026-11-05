@@ -29,39 +29,39 @@ import { Badge } from '@/components/ui/badge';
 const whyChooseUs = [
   {
     icon: ShieldCheck,
-    title: 'Independent & Unbiased',
+    title: 'Digital Reports, Not Inspections',
     description:
-      'We work for you, not the seller. Our assessments are completely independent — we have no ties to any dealership or repair shop.',
+      'CheckMyVan provides Digital PDF Reports only. No technician visit, physical inspection, or vehicle testing is included.',
   },
   {
     icon: Search,
-    title: 'Vehicle-Specific Assessments',
+    title: 'Vehicle-Specific Report Topics',
     description:
-      'Our inspections are matched to the vehicle, covering mechanical systems on vans, campervans, and motorhomes, plus habitation systems on motorhomes.',
+      'Choose report topics for vans, campervans, and motorhomes, including mechanical, safety, diagnostic, and habitation information.',
   },
   {
     icon: Camera,
-    title: 'Photo-Documented Findings',
+    title: 'Clear Digital Information',
     description:
-      'Every issue we find is photographed and documented with clear severity ratings, so you can see exactly what we see.',
+      'Reports present the information covered by your selected package in a clear, easy-to-read digital format.',
   },
   {
     icon: Clock,
     title: 'Clear Digital Reports',
     description:
-      'Your report records findings and photos relevant to the inspection selected, with recommendations presented clearly.',
+      'Your selected Digital PDF Report is sent by email, so you can access and share it digitally.',
   },
   {
     icon: Award,
-    title: 'Specialist Inspection Services',
+    title: 'Report Options',
     description:
-      'Choose from pre-purchase, road-safety, diagnostic, and habitation checks, with findings recorded for the service selected.',
+      'Choose a pre-purchase, road-safety, diagnostics, or motorhome habitation report.',
   },
   {
     icon: FileText,
-    title: 'Repair Cost Estimates',
+    title: 'Decision Support',
     description:
-      'Each finding includes a fair-market repair cost estimate, giving you the leverage to negotiate or plan your budget.',
+      'Use the report information to support your own research and decision-making. It is not a physical assessment of a vehicle.',
   },
 ];
 
@@ -70,32 +70,32 @@ const values = [
     icon: Eye,
     title: 'Transparency',
     description:
-      'We believe in complete honesty. Every finding is documented with photos and clear explanations — no jargon, no hidden agendas.',
+      'We make it clear what each Digital PDF Report covers and that no physical vehicle inspection is included.',
   },
   {
     icon: Award,
     title: 'Excellence',
     description:
-      'We use inspection areas relevant to the vehicle, from mechanical and safety systems to motorhome habitation equipment.',
+      'We organise report topics around the different information needs of vans, campervans, and motorhomes.',
   },
   {
     icon: HeartHandshake,
     title: 'Customer First',
     description:
-      'Your peace of mind is our priority. We work for you, not the seller or dealer. Our Digital PDF Reports give you the facts to make confident decisions.',
+      'Our Digital PDF Reports provide information you can review at your convenience. They do not replace an independent physical vehicle inspection.',
   },
   {
     icon: Lightbulb,
     title: 'Innovation',
     description:
-      'We continuously invest in the latest diagnostic technology and training to stay ahead of rapidly evolving vehicle technology.',
+      'We keep our digital report options relevant to changing vehicle technology and customer needs.',
   },
 ];
 
 const milestones = [
-  { year: 'Vans', title: 'Mechanical & Safety Checks', description: 'Pre-purchase, road-safety, diagnostic, and MOT or emissions services for eligible vans.' },
-  { year: 'Campervans', title: 'Base Vehicle & Living Fit-Out', description: 'Checks for the motor vehicle alongside an assessment of relevant fitted living-area equipment.' },
-  { year: 'Motorhomes', title: 'Vehicle & Habitation Checks', description: 'Mechanical and safety inspections for the motorhome, with a separate habitation check for the living area.' },
+  { year: 'Vans', title: 'Van Digital Reports', description: 'Digital report topics include pre-purchase, road-safety, diagnostics, and MOT or emissions information.' },
+  { year: 'Campervans', title: 'Campervan Digital Reports', description: 'Choose report topics for the base vehicle and relevant fitted living-area information.' },
+  { year: 'Motorhomes', title: 'Motorhome Digital Reports', description: 'Digital report options cover vehicle topics and a separate habitation report for the living area.' },
 ];
 
 const mobileSectionHeading =
@@ -108,8 +108,8 @@ export default function AboutPage() {
       <section className="relative pt-28 pb-14 sm:pt-32 sm:pb-20 bg-navy overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/4620555/pexels-photo-4620555.jpeg?auto=compress&cs=tinysrgb&w=2560&h=1440&q=90&dpr=2"
-            alt="Van being inspected before purchase"
+            src="https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=2560&h=1440&q=90&dpr=2"
+            alt="Campervan on a scenic journey"
             fill
             sizes="100vw"
             className="object-cover opacity-45"
@@ -125,9 +125,9 @@ export default function AboutPage() {
               Driven by Transparency, Built on Trust
             </h1>
             <p className="text-sm sm:text-lg text-white/70 leading-relaxed max-w-2xl">
-              CheckMyVan provides inspections for vans, campervans, and
-              motorhomes. Our service options are designed around the different
-              mechanical, road-safety, and habitation needs of each vehicle type.
+              CheckMyVan provides Digital PDF Reports for vans, campervans, and
+              motorhomes. Orders are digital only: we do not physically inspect,
+              test, or visit vehicles.
             </p>
           </div>
         </div>
@@ -141,8 +141,8 @@ export default function AboutPage() {
               <div className="relative">
                 <TiltCard intensity={8} className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=900&h=700&dpr=1"
-                    alt="Technician inspecting a van engine"
+                    src="https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=900&h=700&dpr=1"
+                    alt="Campervan on a scenic coastline"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
@@ -163,28 +163,28 @@ export default function AboutPage() {
                   Our Story
                 </span>
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold font-display leading-tight text-navy mb-3 sm:mb-6 text-balance">
-                  From a Single Garage to a National Standard
+                  Clear Vehicle Information, Delivered Digitally
                 </h2>
                 <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
                   <p>
-                    CheckMyVan focuses on inspections for vans, campervans, and
-                    motorhomes. Each vehicle type has different mechanical, road-safety, and
-                    living-area needs, so the right inspection depends on what you own or plan to buy.
+                    CheckMyVan provides digital reports for vans, campervans, and
+                    motorhomes. Choose a report based on the vehicle type and the
+                    information you need.
                   </p>
                   <p>
-                    Motorised vehicles can receive mechanical, safety, diagnostic, and eligible
-                    MOT or emissions checks.
+                    Report options cover pre-purchase, safety, diagnostics, and
+                    eligible MOT or emissions information.
                   </p>
                   <p>
-                    Habitation checks are available for motorhomes, covering the
-                    living-area systems included in that service. Findings are recorded in a
-                    clear report to help you make an informed decision.
+                    Motorhome habitation reports cover information about living-area
+                    systems. Reports are digital products and do not include an in-person
+                    assessment or testing.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4 sm:gap-6 mt-6 sm:mt-8">
                   {[
-                    { icon: ShieldCheck, label: 'Vehicle-Specific Checks' },
-                    { icon: Award, label: 'Clear Digital Pdf' },
+                    { icon: ShieldCheck, label: 'Digital PDF Reports' },
+                    { icon: Award, label: 'No Physical Inspection' },
                     { icon: Users, label: 'Three Vehicle Types' },
                   ].map((item) => (
                     <div key={item.label} className="flex items-center gap-2">
@@ -205,9 +205,9 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-7 sm:gap-8">
             {[
               { icon: Users, value: 3, suffix: '', label: 'Vehicle Types' },
-              { icon: ShieldCheck, value: 4, suffix: '', label: 'Inspection Categories' },
-              { icon: Award, value: 200, suffix: '+', label: 'Checkpoints in Full Checks' },
-              { icon: Star, value: 1, suffix: '', label: 'Clear Report per Inspection' },
+              { icon: ShieldCheck, value: 4, suffix: '', label: 'Report Categories' },
+              { icon: Award, value: 200, suffix: '+', label: 'Topics in Full Reports' },
+              { icon: Star, value: 1, suffix: '', label: 'Digital Report per Order' },
             ].map((stat, i) => (
               <Reveal key={i} delay={i * 100}>
                 <div className="text-center">
@@ -233,7 +233,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Our Values"
             title="What We Stand For"
-            description="The principles that guide every check we perform and every interaction we have."
+            description="The principles behind our Digital PDF Reports and customer support."
             className={mobileSectionHeading}
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10 sm:mt-16">
@@ -257,8 +257,8 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our Journey"
-            title="The Right Check for Each Vehicle"
-            description="Our inspection scope changes with the vehicle, from powered vehicle systems to motorhome living areas."
+            title="Report Options for Each Vehicle"
+            description="Our digital report topics vary by vehicle type, from vehicle systems to motorhome living areas."
             className={mobileSectionHeading}
           />
           <div className="relative mt-10 sm:mt-16">
@@ -294,7 +294,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Why CheckMyVan"
             title="Why Customers Choose Us"
-            description="Independent findings, vehicle-specific checks, and clear reports for the vehicle you need inspected."
+            description="Clear Digital PDF Reports for your vehicle. We do not provide physical inspections or testing."
             light
             className={mobileSectionHeading}
           />

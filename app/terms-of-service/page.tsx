@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
-    'Terms and conditions for CheckMyVan inspections of vans, campervans, and motorhomes in the UK.',
+    'Terms and conditions for CheckMyVan Digital PDF Reports for vans, campervans, and motorhomes.',
   alternates: { canonical: '/terms-of-service' },
   robots: { index: true, follow: true },
 };
@@ -19,76 +19,76 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">1. About These Terms</h2>
             <p>
-              These terms govern your use of CheckMyVan&apos;s website and inspections for
-              vans, campervans, and motorhomes. By booking or using our website,
-              you agree to these terms.
+              These terms govern your use of CheckMyVan&apos;s website and Digital PDF
+              Report products for vans, campervans, and motorhomes. By ordering or
+              using our website, you agree to these terms.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">2. Our Services</h2>
             <p>
-              CheckMyVan provides inspections for vans, campervans, and motorhomes,
-              including pre-purchase and safety checks, diagnostics for motorised vehicles,
-              MOT and emissions testing where applicable, and habitation checks for
-              motorhomes. Each booked check produces a report for the service selected.
+              CheckMyVan provides Digital PDF Reports covering topics for vans,
+              campervans, and motorhomes. Our products are digital reports only and
+              do not include a physical inspection, technician visit, testing, or
+              diagnostic scan of a vehicle.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">3. What We Are Not</h2>
             <p>
-              CheckMyVan is an independent check service. We are not a vehicle dealer,
-              repair shop, or warranty provider. Our checks assess the condition of a
-              van, campervan, or motorhome at the time of inspection only. We do not
-              guarantee the future condition, performance, or roadworthiness of any vehicle.
+              CheckMyVan is not a vehicle dealer, repair shop, or warranty provider.
+              Our reports are informational and do not assess a vehicle&apos;s actual
+              or current condition, performance, or roadworthiness. They are not a
+              substitute for an independent physical inspection.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">4. Bookings and Payment</h2>
             <p>
-              When you book a check, you agree to pay the listed price for the selected
-              package and any add-ons. Payment is collected at the time of booking or on the
-              day of the check, as indicated during the booking process. Prices are in GBP
-              and include applicable VAT.
+              When you order a report, you agree to pay the listed price for the selected
+              package and any digital add-ons. Payment is collected during checkout.
+              Prices are in GBP and include applicable VAT.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">5. Cancellations and Refunds</h2>
             <p>
-              You may cancel or reschedule your check up to 24 hours before the scheduled
-              time at no charge. Cancellations made less than 24 hours before the appointment
-              may be subject to a fee. See our Refund Policy page for full details.
+              Cancellation and refund requests for Digital PDF Report orders are
+              handled in accordance with our Refund Policy and any terms shown at checkout.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold font-display text-navy mb-3">6. Vehicle Access</h2>
+            <h2 className="text-xl font-bold font-display text-navy mb-3">6. Vehicle Information</h2>
             <p>
-              You are responsible for ensuring the vehicle is accessible for
-              checking at the agreed time and location. If the vehicle is not accessible, the
-              check may be rescheduled and a call-out fee may apply.
+              You are responsible for providing accurate vehicle details required
+              for your report order. CheckMyVan does not access, test, or physically
+              inspect the vehicle.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">7. Digital PDF Reports</h2>
             <p>
-              Our Digital Pdf reflect the condition of the selected vehicle at
-              the time of checking based on visual checks, diagnostic scans, and measurements.
-              They are provided for your information and do not constitute a guarantee, warranty,
-              or certification of the vehicle&apos;s condition.
+              Digital PDF Reports provide information on the topics described for
+              the selected product. They are not based on a physical examination of
+              the vehicle and do not constitute a guarantee, warranty, or certification
+              of its condition.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">8. Liability</h2>
             <p>
-              CheckMyVan is not liable for any decisions you make based on our check
-              reports, including purchase decisions, negotiations, or repair choices. Our
-              liability is limited to the fee paid for the check service.
+              CheckMyVan is not liable for decisions you make based on report
+              information, including purchase, negotiation, or repair decisions.
+              Nothing in these terms limits liability where it cannot legally be
+              excluded. Otherwise, our liability is limited to the fee paid for the
+              relevant Digital PDF Report.
             </p>
           </section>
 

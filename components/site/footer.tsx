@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import {
   Mail,
-  MapPin,
   Clock,
 } from 'lucide-react';
 import { BrandLogo } from '@/components/site/brand-logo';
@@ -33,17 +32,13 @@ export function Footer() {
               <BrandLogo variant="light" />
             </Link>
             <p className="text-sm text-white/60 leading-relaxed mb-6 max-w-sm">
-              Vehicle condition, safety, diagnostic, and habitation checks for vans,
-              campervans, and motorhomes, with clear findings in a Digital PDF Report.
+              Digital PDF Reports covering vans, campervans, and motorhomes.
+              No physical inspection or vehicle testing is included.
             </p>
             <div className="space-y-3 text-sm">
             <div className="flex items-center gap-3 text-white/70">
               <Mail className="h-4 w-4 text-primary" />
                 <span>info@checkmyvan.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/70">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span>24 Meridian Way, London, SW18 4QL</span>
               </div>
               <div className="flex items-center gap-3 text-white/70">
                 <Clock className="h-4 w-4 text-primary" />

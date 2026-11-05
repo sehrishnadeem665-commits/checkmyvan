@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Refund Policy',
   description:
-    'Cancellation, rescheduling, and refund terms for van, campervan, and motorhome inspection bookings with CheckMyVan.',
+    'Cancellation and refund information for CheckMyVan Digital PDF Report orders.',
   alternates: { canonical: '/refund-policy' },
   robots: { index: true, follow: true },
 };
@@ -19,32 +19,31 @@ export default function RefundPolicyPage() {
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">1. Cancellation by You</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong className="text-navy">More than 24 hours before:</strong> Full refund or free rescheduling.</li>
-              <li><strong className="text-navy">Less than 24 hours before:</strong> 50% refund. The remainder covers the technician&apos;s allocated time and travel costs.</li>
-              <li><strong className="text-navy">No-show or vehicle not accessible:</strong> No refund. A new booking may be made at full price.</li>
+              <li>Contact us as soon as possible if you want to cancel an order before your report is delivered.</li>
+              <li>If your Digital PDF Report has already been delivered, the service is considered fulfilled. This does not affect any rights you have under applicable consumer law.</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">2. Cancellation by Us</h2>
             <p>
-              If we cancel your check for any reason, you will receive a full refund or a
-              free rescheduled appointment, whichever you prefer.
+              If we are unable to deliver your Digital PDF Report, contact us at
+              info@checkmyvan.com so we can resolve the order with you.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold font-display text-navy mb-3">3. Completed Checks</h2>
+            <h2 className="text-xl font-bold font-display text-navy mb-3">3. Delivered Reports</h2>
             <p>
-              Once a check has been completed and the Digital PDF Report has been
-              delivered, the service is considered fulfilled and is non-refundable.
+              Once the Digital PDF Report has been delivered, the service is considered
+              fulfilled, subject to your statutory consumer rights.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">4. How to Request a Refund</h2>
             <p>
-              To request a refund or reschedule, contact us at info@checkmyvan.com or call
+              To request a refund, contact us at info@checkmyvan.com or call
               020 7946 0958 during business hours. Approved refunds are processed within 5–7
               working days to the original payment method.
             </p>
@@ -53,8 +52,8 @@ export default function RefundPolicyPage() {
           <section>
             <h2 className="text-xl font-bold font-display text-navy mb-3">5. Add-On Services</h2>
             <p>
-              Refunds for add-on services (such as mobile service or EV van battery reports) follow
-              the same cancellation terms as the main check package.
+              Digital PDF Report add-ons follow the same cancellation terms as the
+              main report order.
             </p>
           </section>
         </div>

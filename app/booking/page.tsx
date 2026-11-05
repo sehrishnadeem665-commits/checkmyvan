@@ -99,7 +99,7 @@ export default function BookingPage() {
             Book Your Report
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Tell us whether you need an inspection for a van, campervan, or motorhome.
+            Order a Digital PDF Report for a van, campervan, or motorhome. This product does not include physical inspection or testing.
           </p>
         </div>
       </section>
@@ -114,8 +114,8 @@ export default function BookingPage() {
                 submit();
               }}
             >
-              <h2 className="text-2xl font-bold font-display text-navy mb-2">Vehicle Information</h2>
-              <p className="text-muted-foreground text-sm mb-6">Enter your contact and vehicle details.</p>
+              <h2 className="text-2xl font-bold font-display text-navy mb-2">Report Order Details</h2>
+              <p className="text-muted-foreground text-sm mb-6">Enter your contact details and the vehicle information for your Digital PDF Report.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="clientName">Name *</Label>
@@ -246,10 +246,10 @@ export default function BookingPage() {
                   />
                 </div>
                 <div className="sm:col-span-2">
-                  <Label htmlFor="instruction">Instruction</Label>
+                  <Label htmlFor="instruction">Report notes</Label>
                   <Textarea
                     id="instruction"
-                    placeholder="Add any instructions or details we should know"
+                    placeholder="Add details that may help with your report order"
                     value={form.instruction}
                     onChange={(e) => update('instruction', e.target.value)}
                     className="mt-1.5"

@@ -19,103 +19,103 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
-const inspectionAreas = [
+const reportTopics = [
   {
     icon: Wrench,
     label: 'Engine & Drivetrain',
     count: 45,
     image:
-      'https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
-    alt: 'Engine and drivetrain components being checked during a van inspection',
-    title: 'Engine & Drivetrain Check',
+      'https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+    alt: 'Campervan on a scenic road',
+    title: 'Engine & Drivetrain Report',
     description:
-      'We examine the engine compression, timing belt, transmission operation, differential, driveshaft, mounts, and all visible seals and gaskets for leaks or wear.',
+      'Digital report topics include engine, transmission, drivetrain, and common wear information.',
   },
   {
     icon: Disc,
     label: 'Brakes & Suspension',
     count: 38,
     image:
-      'https://images.pexels.com/photos/8986177/pexels-photo-8986177.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
-    alt: 'Brake pads and suspension parts examined during a safety check',
-    title: 'Brakes & Suspension Check',
+      'https://images.pexels.com/photos/594384/van-vw-travel-trip.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+    alt: 'Van travelling on a road',
+    title: 'Brakes & Suspension Report',
     description:
-      'Brake pad thickness, disc condition, caliper operation, brake lines, shock absorbers, struts, springs, bushings, ball joints, tie rods, and wheel bearings are all checked.',
+      'Review information about brakes, tyres, suspension, and other road-safety topics.',
   },
   {
     icon: Cpu,
     label: 'Electrical & Electronics',
     count: 32,
     image:
-      'https://images.pexels.com/photos/6870309/pexels-photo-6870309.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
-    alt: 'Diagnostic scanner reading van computer modules',
-    title: 'Electrical & Electronics Check',
+      'https://images.pexels.com/photos/2580312/pexels-photo-2580312.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+    alt: 'Campervan parked outdoors',
+    title: 'Electrical & Electronics Report',
     description:
-      'Full OBD-II scan, alternator output, starter function, wiring harness, fuse box, all sensors, infotainment system, and dashboard warning lights are diagnosed.',
+      'Explore digital information about vehicle electronics, diagnostic codes, and common system concerns.',
   },
   {
     icon: Car,
     label: 'Exterior & Body',
     count: 35,
     image:
-      'https://images.pexels.com/photos/594384/van-vw-travel-trip-594384.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
-    alt: 'Van exterior and bodywork condition assessed visually',
-    title: 'Exterior & Body Check',
+      'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+    alt: 'Van parked beside a scenic landscape',
+    title: 'Exterior & Body Report',
     description:
-      'Body panels, paint condition, rust check, glass integrity, door operation, trim, seals, undercarriage, frame integrity, and accident damage indicators are inspected.',
+      'The report covers exterior and bodywork topics to help you know what to look for.',
   },
   {
     icon: Gauge,
     label: 'Fluids & Filters',
     count: 25,
     image:
-      'https://images.pexels.com/photos/4116207/pexels-photo-4116207.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
-    alt: 'Engine oil and fluid levels being checked in a van',
-    title: 'Fluids & Filters Check',
+      'https://images.pexels.com/photos/2580312/pexels-photo-2580312.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+    alt: 'Campervan parked for a journey',
+    title: 'Fluids & Filters Report',
     description:
-      'Engine oil, transmission fluid, coolant, brake fluid, power steering fluid, differential fluid, air filter, cabin filter, and fuel filter condition are assessed.',
+      'Review information about common vehicle fluids, filters, and related maintenance topics.',
   },
   {
     icon: Battery,
     label: 'Battery & Charging',
     count: 15,
     image:
-      'https://images.pexels.com/photos/38869179/pexels-photo-38869179.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
-    alt: 'Battery and charging system being tested on an electric van',
-    title: 'Battery & Charging Check',
+      'https://images.pexels.com/photos/594384/van-vw-travel-trip.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+    alt: 'Van on the road',
+    title: 'Battery & Charging Report',
     description:
-      'Battery voltage, cold cranking amps, charging rate, parasitic draw, terminals, cables, and alternator health are tested with professional equipment.',
+      'Digital report topics cover battery health, charging systems, and related vehicle information.',
   },
   {
     icon: Home,
     label: 'Habitation & Living Area',
     count: 30,
     image:
-      'https://images.pexels.com/photos/9354626/pexels-photo-9354626.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
-    alt: 'Motorhome habitation area being inspected for safety',
-    title: 'Habitation & Living Area Check',
+      'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1',
+    alt: 'Motorhome parked in a scenic setting',
+    title: 'Habitation & Living Area Report',
     description:
-      'For motorhomes: gas systems, leisure electrics, water systems, fire safety, ventilation, damp detection, and structural integrity of the living area.',
+      'For motorhomes, explore information about gas, electrics, water, damp, and living-area safety topics.',
   },
 ];
 
 export function HomeServiceExplorer() {
   const [activeService, setActiveService] = useState(0);
-  const activeArea = inspectionAreas[activeService];
+  const activeArea = reportTopics[activeService];
 
   return (
     <section className="py-14 sm:py-24 bg-secondary/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="What We Check"
-          title="Explore Our 200+ Point Check"
-          description="Explore inspection areas for motorised vehicles, plus the habitation systems checked in motorhomes."
+          eyebrow="Digital Report Topics"
+          title="Explore What Our Reports Cover"
+          description="Our Digital PDF Reports cover common vehicle and habitation topics. They do not include an in-person inspection or testing."
           className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-2xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-8 mt-10 sm:mt-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1.5 sm:gap-2">
-            {inspectionAreas.map((area, index) => {
+            {reportTopics.map((area, index) => {
               const AreaIcon = area.icon;
 
               return (
@@ -148,7 +148,7 @@ export function HomeServiceExplorer() {
                     className="px-2 py-0.5 text-[10px] sm:px-2.5 sm:py-0.5 sm:text-xs"
                     variant={activeService === index ? 'default' : 'secondary'}
                   >
-                    {area.count} pts
+                    {area.count} topics
                   </Badge>
                 </button>
               );
@@ -175,7 +175,7 @@ export function HomeServiceExplorer() {
                   </p>
                   <Link href="/booking">
                     <Button className="w-fit bg-primary hover:bg-primary/90">
-                      Book This Check <ArrowRight className="ml-2 h-4 w-4" />
+                      View Report Options <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
                 </div>

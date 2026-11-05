@@ -7,28 +7,28 @@ import { SectionHeading } from '@/components/site/section-heading';
 
 const galleryImages = [
   {
-    src: 'https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    title: 'Van Engine Bay Check',
+    src: 'https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    title: 'Pre-Purchase PDF Report',
   },
   {
     src: 'https://images.pexels.com/photos/594384/van-vw-travel-trip-594384.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    title: 'Campervan Exterior Check',
+    title: 'Campervan PDF Report',
   },
   {
-    src: 'https://images.pexels.com/photos/9354626/pexels-photo-9354626.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    title: 'Motorhome Habitation Check',
+    src: 'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    title: 'Motorhome PDF Report',
   },
   {
-    src: 'https://images.pexels.com/photos/8986177/pexels-photo-8986177.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    title: 'Van Bodywork Check',
+    src: 'https://images.pexels.com/photos/594384/van-vw-travel-trip-594384.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    title: 'Road Safety PDF Report',
   },
   {
-    src: 'https://images.pexels.com/photos/6870309/pexels-photo-6870309.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    title: 'Van Diagnostics',
+    src: 'https://images.pexels.com/photos/2580312/pexels-photo-2580312.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    title: 'Diagnostics PDF Report',
   },
   {
-    src: 'https://images.pexels.com/photos/4620555/pexels-photo-4620555.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    title: 'Commercial Van Fleet Check',
+    src: 'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    title: 'Digital Reports for Fleets',
   },
 ];
 
@@ -52,8 +52,8 @@ export function GalleryCarousel() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 sm:gap-6 mb-8 sm:mb-12">
           <SectionHeading
             eyebrow="Gallery"
-            title="Inside Our Inspection Process"
-            description="A look at inspection areas across vans, campervans, and motorhomes."
+            title="Explore Our Digital Reports"
+            description="Choose a report topic for vans, campervans, and motorhomes. All products are delivered digitally."
             align="left"
             light
             className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-2xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"

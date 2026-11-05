@@ -22,15 +22,14 @@ const pricingPlans = [
   {
     name: 'Basic',
     price: 40,
-    period: 'per check',
-    description: 'Essential inspection',
+    period: 'per report',
+    description: 'Essential Digital PDF Report',
     icon: ShieldCheck,
     badge: 'Best for budget',
     features: [
-      'Vehicle-specific safety checks',
-      'Brake and tyre condition',
-      'Lights & signals test',
-      '20+ inspection photos',
+      'Safety-topic overview',
+      'Brake and tyre information',
+      'Lights and signals information',
       'Basic Digital PDF Report',
       '1 vehicle per order',
       'Report within 1 hour',
@@ -42,18 +41,17 @@ const pricingPlans = [
   {
     name: 'Standard',
     price: 50,
-    period: 'per check',
-    description: 'Detailed inspection',
+    period: 'per report',
+    description: 'Detailed Digital PDF Report',
     icon: Sparkles,
     badge: 'Most popular',
     features: [
-      '150+ point inspection',
-      'Full safety checks',
-      'OBD-II diagnostics',
-      '60+ high-resolution photos',
+      '150+ report-topic checklist',
+      'Safety-topic overview',
+      'OBD-II information',
       'Detailed Digital PDF Report',
-      'Repair cost estimates',
-      'Market value assessment',
+      'Repair cost information',
+      'Market value information',
       'Report within 1 hour',
     ],
     excluded: [],
@@ -63,20 +61,17 @@ const pricingPlans = [
   {
     name: 'Premium',
     price: 60,
-    period: 'per check',
-    description: 'Comprehensive inspection',
+    period: 'per report',
+    description: 'Comprehensive Digital PDF Report',
     icon: Award,
     badge: 'Complete package',
     features: [
-      'Full 200+ point inspection',
+      '200+ report-topic checklist',
       'Everything in Standard',
-      'Engine compression test',
-      'Leak-down test',
-      '60+ high-resolution photos',
-      'Fluid analysis',
-      'Battery & charging system test',
-      'Undercarriage inspection',
-      'Habitation check option for motorhomes',
+      'Engine and mechanical information',
+      'Fluid and filter information',
+      'Battery and charging-system information',
+      'Motorhome habitation report option',
       'Phone consultation',
       'Digital PDF Report within 1 hour',
     ],
@@ -87,30 +82,26 @@ const pricingPlans = [
 ];
 
 const addOns = [
-  { name: 'Mobile Service (We Come to You)', price: '£39' },
   { name: 'EV Van Battery Health Digital PDF Report', price: '£49' },
-  { name: 'Motorhome Habitation Check', price: '£119' },
-  { name: 'Pre-Purchase Market Value Analysis', price: '£29' },
-  { name: 'Extended Warranty Check', price: '£59' },
+  { name: 'Motorhome Habitation Digital PDF Report', price: '£119' },
+  { name: 'Pre-Purchase Market Value Report', price: '£29' },
+  { name: 'Extended Warranty Information Report', price: '£59' },
 ];
 
 const comparison = [
-  { feature: 'Inspection Scope', basic: 'Safety-focused', standard: '150+ points', premium: '200+ points' },
-  { feature: 'Vehicle-Specific Safety Check', basic: true, standard: true, premium: true },
-  { feature: 'Brake & Tyre Condition Check', basic: true, standard: true, premium: true },
-  { feature: 'Lights & Signals Test', basic: true, standard: true, premium: true },
-  { feature: 'OBD-II Computer Diagnostics', basic: false, standard: true, premium: true },
-  { feature: 'Inspection Photos', basic: '20+', standard: '60+', premium: '60+' },
+  { feature: 'Report Scope', basic: 'Safety topics', standard: '150+ topics', premium: '200+ topics' },
+  { feature: 'Safety-topic information', basic: true, standard: true, premium: true },
+  { feature: 'Brake and tyre information', basic: true, standard: true, premium: true },
+  { feature: 'Lights and signals information', basic: true, standard: true, premium: true },
+  { feature: 'OBD-II information', basic: false, standard: true, premium: true },
   { feature: 'Digital PDF Report', basic: 'Basic, within 1 hour', standard: 'Detailed, within 1 hour', premium: 'Within 1 hour' },
-  { feature: 'Repair Cost Estimates', basic: false, standard: true, premium: true },
-  { feature: 'Market Value Assessment', basic: false, standard: true, premium: true },
+  { feature: 'Repair cost information', basic: false, standard: true, premium: true },
+  { feature: 'Market value information', basic: false, standard: true, premium: true },
   { feature: 'Vehicles per Order', basic: '1 vehicle', standard: false, premium: false },
-  { feature: 'Engine Compression Test', basic: false, standard: false, premium: true },
-  { feature: 'Leak-Down Test', basic: false, standard: false, premium: true },
-  { feature: 'Fluid Analysis', basic: false, standard: false, premium: true },
-  { feature: 'Battery & Charging System Test', basic: false, standard: false, premium: true },
-  { feature: 'Underchassis Check', basic: false, standard: false, premium: true },
-  { feature: 'Motorhome Habitation Check', basic: '£119 add-on', standard: '£119 add-on', premium: '£119 add-on' },
+  { feature: 'Engine and mechanical information', basic: false, standard: false, premium: true },
+  { feature: 'Fluid and filter information', basic: false, standard: false, premium: true },
+  { feature: 'Battery and charging-system information', basic: false, standard: false, premium: true },
+  { feature: 'Motorhome habitation report', basic: '£119 add-on', standard: '£119 add-on', premium: '£119 add-on' },
   { feature: 'Phone Consultation', basic: false, standard: false, premium: true },
 ];
 
@@ -137,9 +128,9 @@ export default function PricingPage() {
             Simple, Honest Pricing
           </h1>
           <p className="text-sm sm:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-            No hidden fees. Choose the inspection that fits your van, campervan,
-            or motorhome. Mechanical checks apply to motorised vehicles;
-            habitation inspections cover the motorhome living area.
+            No hidden fees. Choose the Digital PDF Report that fits your van,
+            campervan, or motorhome. Our service is digital only and does not
+            include physical inspection or testing.
           </p>
         </div>
       </section>
@@ -255,8 +246,8 @@ export default function PricingPage() {
         <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Compare Plans"
-            title="Detailed Feature Comparison"
-            description="See exactly what is included in each check package."
+            title="Detailed Report Comparison"
+            description="Compare the topics and information included in each Digital PDF Report package."
             className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"
           />
 
@@ -306,7 +297,7 @@ export default function PricingPage() {
             Still Not Sure Which Plan is Right?
           </h2>
           <p className="text-sm sm:text-lg text-white/70 mb-6 sm:mb-8">
-            Not sure which inspection fits your vehicle? Our team can help you choose a van, campervan, or motorhome check.
+            Not sure which report fits your vehicle? Our team can help you choose a Digital PDF Report.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Link href="/contact">

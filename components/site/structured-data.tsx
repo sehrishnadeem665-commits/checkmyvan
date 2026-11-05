@@ -1,44 +1,12 @@
 export function StructuredData() {
-  const localBusiness = {
+  const organization = {
     '@context': 'https://schema.org',
-    '@type': 'AutoRepair',
+    '@type': 'Organization',
     name: 'CheckMyVan',
     description:
-      'Specialist inspections for vans, campervans, and motorhomes, including pre-purchase, safety, diagnostic, and habitation checks.',
+      'Digital PDF Reports for vans, campervans, and motorhomes. No physical vehicle inspection or testing is included.',
     url: 'https://checkmyvan.com',
-    telephone: '+442079460958',
     email: 'info@checkmyvan.com',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '24 Meridian Way',
-      addressLocality: 'London',
-      postalCode: 'SW18 4QL',
-      addressCountry: 'GB',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 51.45,
-      longitude: -0.2,
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '07:00',
-        closes: '19:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '08:00',
-        closes: '17:00',
-      },
-    ],
-    areaServed: {
-      '@type': 'Country',
-      name: 'United Kingdom',
-    },
-    priceRange: '£49–£169',
   };
 
   const faqPage = {
@@ -47,34 +15,34 @@ export function StructuredData() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What types of vehicles do you inspect?',
+        name: 'What types of vehicles are covered by your reports?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We provide inspection services for vans, campervans, and motorhomes, helping you understand the vehicle’s condition before making a purchase.',
+          text: 'Our Digital PDF Reports cover vans, campervans, and motorhomes, with report topics tailored to each vehicle type.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is included in the vehicle inspection?',
+        name: 'What is included in a Digital PDF Report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our vehicle inspections cover key areas of the vehicle to help identify potential issues and give you a clearer understanding of its overall condition.',
+          text: 'Report topics vary by package and vehicle type. Each order is for a digital report only; it does not include a physical inspection or technician visit.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Do you provide on-site inspections?',
+        name: 'Do you physically inspect vehicles?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Inspection availability depends on the selected service and vehicle location. Please check the details of your chosen inspection before placing your order.',
+          text: 'No. CheckMyVan provides Digital PDF Reports only. We do not visit, test, or physically inspect vehicles.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How do I book a vehicle inspection?',
+        name: 'How do I order a report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Simply select your preferred inspection service and complete your order online. Once your order is placed, you will receive a confirmation message with the relevant details.',
+          text: 'Choose a report package, enter your contact and vehicle details, and complete your order online. You will receive an order confirmation.',
         },
       },
       {
@@ -90,7 +58,7 @@ export function StructuredData() {
         name: 'How soon will I receive my Digital PDF Report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'You will receive your Digital PDF Inspection Report within 1 hour of placing your order, so you can review the inspection findings promptly.',
+          text: 'Your Digital PDF Report is sent within 1 hour of placing your order.',
         },
       },
       {
@@ -98,31 +66,31 @@ export function StructuredData() {
         name: 'What is included in the Digital PDF Report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your Digital PDF Report provides a summary of the inspection findings, highlighting the vehicle’s condition and any issues identified during the inspection.',
+          text: 'The report contains digital information for the package and vehicle type you select. It is not a physical assessment of the vehicle or a guarantee of its current condition.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Can I use the inspection report to negotiate the price?',
+        name: 'Can I use the Digital PDF Report when making a decision?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. The report can help you identify potential issues and use the inspection findings to support price negotiations with the seller.',
+          text: 'The report can provide information to consider during your decision-making. It is not a substitute for an independent physical inspection before purchase.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Which inspection is right for my vehicle?',
+        name: 'Which report is right for my vehicle?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The appropriate inspection depends on your vehicle type and the checks you require. Choose the service that best matches your van, campervan, or motorhome.',
+          text: 'Choose the report package that best matches your vehicle type and the information you need.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is a habitation check?',
+        name: 'Is a habitation report a physical check?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A habitation check focuses on the living area of a campervan or motorhome, including relevant systems and facilities. It can help identify potential issues with the vehicle’s living space.',
+          text: 'No. The motorhome habitation option is a Digital PDF Report about living-area topics. It does not include testing or an in-person assessment.',
         },
       },
     ],
@@ -132,7 +100,7 @@ export function StructuredData() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
       />
       <script
         type="application/ld+json"

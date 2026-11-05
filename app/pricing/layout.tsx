@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pricing — Van, Campervan & Motorhome Inspections UK',
+  title: 'Pricing — Digital PDF Vehicle Reports | CheckMyVan',
   description:
-    'Clear pricing for van, campervan, and motorhome inspections in the UK. Choose a safety, pre-purchase, or premium check, with motorhome habitation checks available.',
+    'Clear pricing for Digital PDF Reports for vans, campervans, and motorhomes. Choose a pre-purchase, safety, diagnostics, or habitation report. No physical inspection included.',
   alternates: { canonical: '/pricing' },
   openGraph: {
-    title: 'Pricing — Van, Campervan & Motorhome Checks | CheckMyVan',
+    title: 'Pricing — Digital PDF Vehicle Reports | CheckMyVan',
     description:
-      'Compare inspection prices for vans, campervans, and motorhomes. Habitation, safety, and diagnostic services are priced by service.',
+      'Compare Digital PDF Report packages for vans, campervans, and motorhomes. Orders are digital only; physical inspection is not included.',
     url: 'https://checkmyvan.com/pricing',
     images: ['/opengraph-image'],
   },

@@ -10,10 +10,10 @@ import {
   Users,
   Star,
   ArrowRight,
-  Quote,
   Search,
   Zap,
   Home as HomeIcon,
+  FileText,
 } from 'lucide-react';
 import { HeroCarousel } from '@/components/site/hero-carousel';
 import { GalleryCarousel } from '@/components/site/gallery-carousel';
@@ -36,114 +36,105 @@ import { StructuredData } from '@/components/site/structured-data';
 const services = [
   {
     icon: Search,
-    title: 'Pre-Purchase Van Check',
+    title: 'Pre-Purchase PDF Report',
     description:
-      'A detailed pre-purchase inspection for vans, campervans, and motorhomes, with mechanical, bodywork, and safety findings in a clear digital report.',
-    features: ['200+ checkpoints', 'Photo documentation', 'Market value analysis'],
+      'A digital report to help you review key vehicle information before buying a van, campervan, or motorhome.',
+    features: ['200+ report topics', 'Clear digital format', 'Market value information'],
     image:
-      'https://images.pexels.com/photos/4620555/pexels-photo-4620555.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   },
   {
     icon: ShieldCheck,
-    title: 'Safety Check',
+    title: 'Road Safety PDF Report',
     description:
-      'Check key road-safety items on a van, campervan, or motorhome, including brakes, tyres, lights, and visible structure.',
-    features: ['Brake analysis', 'Tyre condition check', 'Safety compliance'],
+      'A digital report covering important road-safety topics for vans, campervans, and motorhomes.',
+    features: ['Brake and tyre topics', 'Lights and signals', 'Safety information'],
     image:
-      'https://images.pexels.com/photos/8986177/pexels-photo-8986177.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.pexels.com/photos/594384/van-vw-travel-trip.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   },
   {
     icon: Cpu,
-    title: 'Computer Diagnostics',
+    title: 'Vehicle Diagnostics PDF Report',
     description:
-      'Diagnostic scanning for motorised vans, campervans, and motorhomes helps identify stored fault codes and system concerns.',
-    features: ['Full module scan', 'Live data analysis', 'Code clearing'],
+      'A digital report explaining diagnostic topics and common fault-code information for motorised vehicles.',
+    features: ['Fault-code information', 'System overview', 'Clear explanations'],
     image:
-      'https://images.pexels.com/photos/6870309/pexels-photo-6870309.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.pexels.com/photos/2580312/pexels-photo-2580312.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   },
   {
     icon: Gauge,
-    title: 'MOT & Emissions Testing',
+    title: 'MOT & Emissions PDF Report',
     description:
-      'MOT and emissions services for eligible motor vehicles, including vans, campervans, and motorhomes.',
-    features: ['OBD-II test', 'Exhaust analysis', 'Digital PDF Report'],
+      'A digital report covering MOT and emissions information for eligible motor vehicles.',
+    features: ['MOT information', 'Emissions topics', 'Digital PDF format'],
     image:
-      'https://images.pexels.com/photos/4116207/pexels-photo-4116207.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   },
   {
     icon: HomeIcon,
-    title: 'Habitation Check',
+    title: 'Habitation PDF Report',
     description:
-      'For motorhomes: assess habitation systems such as gas, electrics, water, damp, and living-area safety.',
-    features: ['Gas & electrics', 'Damp detection', 'Water system test'],
+      'A digital report covering motorhome living-area topics such as gas, electrics, water, and damp.',
+    features: ['Gas and electrics', 'Damp information', 'Water systems'],
     image:
-      'https://images.pexels.com/photos/9354626/pexels-photo-9354626.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   },
   {
     icon: Zap,
-    title: 'EV Van & Hybrid Check',
+    title: 'EV & Hybrid PDF Report',
     description:
-      'A specialist check for electric and hybrid vans and campervans, including high-voltage battery and charging-system diagnostics.',
-    features: ['Battery health check', 'Charging system test', 'Inverter diagnostics'],
+      'A digital report covering battery-health and charging-system information for electric and hybrid vehicles.',
+    features: ['Battery information', 'Charging systems', 'Inverter overview'],
     image:
-      'https://images.pexels.com/photos/38869179/pexels-photo-38869179.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.pexels.com/photos/594384/van-vw-travel-trip.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   },
 ];
 
 const stats = [
   { icon: Users, value: 3, suffix: '', label: 'Vehicle Types' },
-  { icon: Award, value: 4, suffix: '', label: 'Inspection Categories' },
-  { icon: Star, value: 6, suffix: '', label: 'Specialist Services' },
-  { icon: ShieldCheck, value: 200, suffix: '+', label: 'Checkpoint Items' },
+  { icon: Award, value: 4, suffix: '', label: 'Report Categories' },
+  { icon: Star, value: 6, suffix: '', label: 'Digital Report Types' },
+  { icon: ShieldCheck, value: 200, suffix: '+', label: 'Report Topics' },
 ];
 
-const testimonials = [
+const reportBenefits = [
   {
-    name: 'Michael Chen',
-    role: 'Campervan Buyer',
-    rating: 5,
-    text: 'CheckMyVan saved me from buying a campervan with a hidden engine issue. Their 200-point check caught a head gasket problem the seller did not disclose. The Digital PDF Report was incredibly detailed with photos. Worth every penny.',
-    image:
-      'https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
+    icon: Clock,
+    title: 'Delivered by Email',
+    description: 'Your Digital PDF Report is sent within 1 hour of placing your order.',
   },
   {
-    name: 'Sarah Williams',
-    role: 'Fleet Van Manager',
-    rating: 5,
-    text: 'We use CheckMyVan for our entire fleet of 40 delivery vans. The fleet dashboard makes it easy to track check schedules and maintenance needs. Their team is professional, fast, and consistently thorough.',
-    image:
-      'https://images.pexels.com/photos/262391/pexels-photo-262391.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
+    icon: FileText,
+    title: 'Easy to Access',
+    description: 'Keep your report in digital format and review it when convenient.',
   },
   {
-    name: 'James Rodriguez',
-    role: 'Motorhome Dealer',
-    rating: 5,
-    text: 'As a motorhome dealer, I need checks I can trust. CheckMyVan delivers same-day Digital PDF Reports that give my buyers confidence. The detailed photo documentation has helped me close more deals. Highly recommended.',
-    image:
-      'https://images.pexels.com/photos/20374423/pexels-photo-20374423.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
+    icon: ShieldCheck,
+    title: 'Digital Report Only',
+    description: 'No physical inspection, vehicle testing, or technician visit is included.',
   },
 ];
 
 const faqs = [
   {
-    question: 'What types of vehicles do you inspect?',
+    question: 'What types of vehicles are covered by your reports?',
     answer:
-      'We provide inspection services for vans, campervans, and motorhomes, helping you understand the vehicle’s condition before making a purchase.',
+      'Our Digital PDF Reports cover vans, campervans, and motorhomes, with report topics tailored to each vehicle type.',
   },
   {
-    question: 'What is included in the vehicle inspection?',
+    question: 'What is included in a Digital PDF Report?',
     answer:
-      'Our vehicle inspections cover key areas of the vehicle to help identify potential issues and give you a clearer understanding of its overall condition.',
+      'Report topics vary by package and vehicle type. Each order is for a digital report only; it does not include a physical inspection or technician visit.',
   },
   {
-    question: 'Do you provide on-site inspections?',
+    question: 'Do you physically inspect vehicles?',
     answer:
-      'Inspection availability depends on the selected service and vehicle location. Please check the details of your chosen inspection before placing your order.',
+      'No. CheckMyVan provides Digital PDF Reports only. We do not visit, test, or physically inspect vehicles.',
   },
   {
-    question: 'How do I book a vehicle inspection?',
+    question: 'How do I order a report?',
     answer:
-      'Simply select your preferred inspection service and complete your order online. Once your order is placed, you will receive a confirmation message with the relevant details.',
+      'Choose a report package, enter your contact and vehicle details, and complete your order online. You will receive an order confirmation.',
   },
   {
     question: 'Will I receive an order confirmation?',
@@ -153,27 +144,27 @@ const faqs = [
   {
     question: 'How soon will I receive my Digital PDF Report?',
     answer:
-      'You will receive your Digital PDF Inspection Report within 1 hour of placing your order, so you can review the inspection findings promptly.',
+      'Your Digital PDF Report is sent within 1 hour of placing your order.',
   },
   {
     question: 'What is included in the Digital PDF Report?',
     answer:
-      'Your Digital PDF Report provides a summary of the inspection findings, highlighting the vehicle’s condition and any issues identified during the inspection.',
+      'The report contains digital information for the package and vehicle type you select. It is not a physical assessment of the vehicle or a guarantee of its current condition.',
   },
   {
-    question: 'Can I use the inspection report to negotiate the price?',
+    question: 'Can I use the Digital PDF Report when making a decision?',
     answer:
-      'Yes. The report can help you identify potential issues and use the inspection findings to support price negotiations with the seller.',
+      'The report can provide information to consider during your decision-making. It is not a substitute for an independent physical inspection before purchase.',
   },
   {
-    question: 'Which inspection is right for my vehicle?',
+    question: 'Which report is right for my vehicle?',
     answer:
-      'The appropriate inspection depends on your vehicle type and the checks you require. Choose the service that best matches your van, campervan, or motorhome.',
+      'Choose the report package that best matches your vehicle type and the information you need.',
   },
   {
-    question: 'What is a habitation check?',
+    question: 'Is a habitation report a physical check?',
     answer:
-      'A habitation check focuses on the living area of a campervan or motorhome, including relevant systems and facilities. It can help identify potential issues with the vehicle’s living space.',
+      'No. The motorhome habitation option is a Digital PDF Report about living-area topics. It does not include testing or an in-person assessment.',
   },
 ];
 
@@ -191,9 +182,9 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl px-4 py-5 sm:px-6 sm:py-8 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-5 sm:gap-8">
             {[
-              { icon: ShieldCheck, title: 'Vehicle-Specific Checks', subtitle: 'Four specialist categories' },
-              { icon: Clock, title: 'Digital Digital Pdf', subtitle: 'Photos & clear findings' },
-              { icon: ShieldCheck, title: '200+ Points', subtitle: 'Comprehensive check' },
+              { icon: ShieldCheck, title: 'Digital Report Types', subtitle: 'Four report categories' },
+              { icon: Clock, title: 'Digital PDF Report', subtitle: 'Delivered by email' },
+              { icon: ShieldCheck, title: '200+ Topics', subtitle: 'Detailed report coverage' },
               { icon: Search, title: 'Three Vehicle Types', subtitle: 'Vans to motorhomes' },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 100}>
@@ -217,8 +208,8 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our Services"
-            title="Vehicle Checks for Vans, Campervans & Motorhomes"
-            description="Choose a pre-purchase, safety, diagnostic, or habitation check designed for the vehicle you own or are considering."
+            title="Digital PDF Reports for Vans, Campervans & Motorhomes"
+            description="Choose a digital report covering pre-purchase, safety, diagnostics, or habitation topics."
             className={homeSectionHeading}
           />
 
@@ -279,8 +270,8 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeading
             eyebrow="By The Numbers"
-            title="The Right Inspection for Your Vehicle"
-            description="Our inspection options are tailored to vans, campervans, and motorhomes and the questions you need answered."
+            title="The Right Digital Report for Your Vehicle"
+            description="Choose a Digital PDF Report tailored to your van, campervan, or motorhome. No physical inspection is included."
             light
             className={homeSectionHeading}
           />
@@ -312,44 +303,29 @@ export default function Home() {
       <HomeServiceExplorer />
       <GalleryCarousel />
 
-      {/* Testimonials */}
+      {/* Digital Report Benefits */}
       <section className="py-14 sm:py-24 bg-white">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Testimonials"
-            title="What Our Customers Say"
-            description="Stories from customers who booked checks for their vans, campervans, and motorhomes."
+            eyebrow="Digital by Design"
+            title="A Report You Can Access Anywhere"
+            description="Order online and receive a Digital PDF Report by email. No site visit is required."
             className={homeSectionHeading}
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-10 sm:mt-16">
-            {testimonials.map((testimonial, i) => (
-              <Reveal key={i} delay={i * 100}>
+            {reportBenefits.map((benefit, i) => (
+              <Reveal key={benefit.title} delay={i * 100}>
                 <div className="h-full rounded-2xl bg-gradient-to-b from-secondary/40 to-white border border-border p-5 sm:p-8 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
-                  <Quote className="h-8 w-8 sm:h-10 sm:w-10 text-primary/20 mb-3 sm:mb-4" />
-                  <div className="flex items-center gap-1 mb-3 sm:mb-4">
-                    {Array.from({ length: testimonial.rating }).map((_, idx) => (
-                      <Star key={idx} className="h-4 w-4 fill-gold text-gold" />
-                    ))}
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4">
+                    <benefit.icon className="h-6 w-6" />
                   </div>
-                  <p className="text-xs sm:text-sm text-navy leading-relaxed mb-5 sm:mb-6">
-                    &ldquo;{testimonial.text}&rdquo;
+                  <h3 className="text-base sm:text-lg font-bold font-display text-navy mb-2">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    {benefit.description}
                   </p>
-                  <div className="flex items-center gap-3 pt-4 border-t border-border">
-                    <div className="relative h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden">
-                      <Image
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        fill
-                        sizes="48px"
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-navy text-xs sm:text-sm">{testimonial.name}</div>
-                      <div className="text-xs text-muted-foreground">{testimonial.role}</div>
-                    </div>
-                  </div>
                 </div>
               </Reveal>
             ))}
@@ -363,7 +339,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="FAQ"
             title="Frequently Asked Questions"
-            description="Find answers to common questions about our vehicle inspection services, booking process, and Digital PDF Reports."
+            description="Find answers about our Digital PDF Reports, how to order, and what is not included."
             className={homeSectionHeading}
           />
 
@@ -392,7 +368,7 @@ export default function Home() {
       <section className="relative py-14 sm:py-24 bg-navy overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/2580312/pexels-photo-2580312.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1"
+            src="https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1"
             alt="Campervan parked in a scenic landscape under a blue sky"
             fill
             sizes="100vw"
@@ -405,11 +381,11 @@ export default function Home() {
             Ready When You Are
           </Badge>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-display text-white mb-3 sm:mb-6 text-balance">
-            Book a Van, Campervan or Motorhome Inspection
+            Order a Digital PDF Vehicle Report
           </h2>
           <p className="text-sm sm:text-lg text-white/70 mb-6 sm:mb-8 max-w-2xl mx-auto">
-            Choose an inspection that fits your vehicle, from pre-purchase and safety
-            checks to diagnostics and habitation assessments.
+            Choose a report for your vehicle and receive it by email within 1 hour.
+            Our service is digital only; it does not include a physical inspection.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Link href="/booking">

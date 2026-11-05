@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About CheckMyVan — 15 Years of Trusted Van & Leisure Vehicle Checks',
+  title: 'About CheckMyVan — Digital PDF Vehicle Reports',
   description:
-    'Learn about CheckMyVan inspections for vans, campervans, and motorhomes, including pre-purchase, road-safety, diagnostic, and habitation checks.',
+    'Learn about CheckMyVan Digital PDF Reports for vans, campervans, and motorhomes. Reports are digital products; no physical inspection is included.',
   alternates: { canonical: '/about' },
   openGraph: {
-    title: 'About CheckMyVan — Trusted UK Van & Leisure Vehicle Experts',
+    title: 'About CheckMyVan — Digital PDF Vehicle Reports',
     description:
-      'Vehicle-specific inspections for vans, campervans, and motorhomes across the UK.',
+      'Digital PDF Reports covering vans, campervans, and motorhomes. No in-person inspection or vehicle testing is provided.',
     url: 'https://checkmyvan.com/about',
     images: ['/opengraph-image'],
   },

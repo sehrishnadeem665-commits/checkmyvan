@@ -23,30 +23,30 @@ import {
 const processSteps = [
   {
     icon: FileText,
-    title: 'Select Your Plan',
+    title: 'Choose a Report',
     description:
-      'Choose the inspection plan that suits your van, campervan, or motorhome.',
+      'Choose a Digital PDF Report for your van, campervan, or motorhome.',
   },
   {
     icon: ClipboardList,
     title: 'Enter Your Details',
-    description: 'Fill in your contact and vehicle details to place your booking.',
+    description: 'Enter your contact details and the vehicle information for your order.',
   },
   {
     icon: CreditCard,
     title: 'Complete Payment',
-    description: 'Pay securely to confirm your selected inspection plan.',
+    description: 'Pay securely to confirm your selected report order.',
   },
   {
     icon: Mail,
-    title: 'Get a Confirmation Email',
-    description: 'We will send a confirmation email with your booking details.',
+    title: 'Get an Order Confirmation',
+    description: 'We will email you confirmation and your order details.',
   },
   {
     icon: Check,
-    title: 'Receive Your Digital Report',
+    title: 'Receive Your Digital PDF',
     description:
-      'Once your inspection is complete, your digital report will be sent to your email.',
+      'Your Digital PDF Report will be sent to your email within 1 hour. No physical inspection is included.',
   },
 ];
 

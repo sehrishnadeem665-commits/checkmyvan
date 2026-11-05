@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact CheckMyVan — Van & Leisure Vehicle Check Enquiries UK',
+  title: 'Contact CheckMyVan — Digital PDF Report Enquiries',
   description:
-    'Get in touch with CheckMyVan for van, campervan, or motorhome check enquiries, fleet quotes, or technical support. Call 020 7946 0958 or email info@checkmyvan.com. London facility open Mon–Sat.',
+    'Contact CheckMyVan with questions about Digital PDF Reports for vans, campervans, and motorhomes. Email info@checkmyvan.com.',
   alternates: { canonical: '/contact' },
   openGraph: {
-    title: 'Contact CheckMyVan — Van & Leisure Vehicle Check Enquiries',
+    title: 'Contact CheckMyVan — Digital PDF Report Enquiries',
     description:
-      'Call 020 7946 0958 or email info@checkmyvan.com. Visit our London facility at 24 Meridian Way, SW18 4QL. Open Mon–Sat.',
+      'Email info@checkmyvan.com with questions about Digital PDF Reports. Reports are digital products; no physical inspection is included.',
     url: 'https://checkmyvan.com/contact',
     images: ['/opengraph-image'],
   },

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/server';
 
 export const runtime = 'edge';
 export const alt =
-  'CheckMyVan — independent van, campervan and motorhome inspections';
+  'CheckMyVan — Digital PDF Reports for vans, campervans and motorhomes';
 export const size = {
   width: 1200,
   height: 630,
@@ -132,7 +132,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.4,
             }}
           >
-            Independent checks for vans, campervans &amp; motorhomes.
+            Digital PDF Reports for vans, campervans &amp; motorhomes.
           </div>
           <div
             style={{
@@ -146,7 +146,7 @@ export default function OpenGraphImage() {
             }}
           >
             <span style={{ color: '#38bdf8', fontSize: 24 }}>✓</span>
-            Clear findings. Better decisions.
+            Clear information. Better decisions.
           </div>
         </div>
         <div
@@ -221,9 +221,9 @@ export default function OpenGraphImage() {
               marginBottom: 18,
             }}
           >
-            Inspection summary
+            Digital PDF report
           </div>
-          {['Safety checks', 'Diagnostics', 'Photo report'].map((item) => (
+          {['Safety information', 'Vehicle guides', 'Digital report'].map((item) => (
             <div
               key={item}
               style={{

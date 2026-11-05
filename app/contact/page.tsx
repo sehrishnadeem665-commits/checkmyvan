@@ -4,14 +4,12 @@ import { useState } from 'react';
 import Image from 'next/image';
 import {
   Mail,
-  MapPin,
   Clock,
   Send,
   MessageSquare,
   CheckCircle2,
   Loader2,
-  Building2,
-  Car,
+  FileText,
 } from 'lucide-react';
 import { SectionHeading } from '@/components/site/section-heading';
 import { Reveal } from '@/components/site/reveal';
@@ -28,13 +26,6 @@ const contactInfo = [
     value: 'info@checkmyvan.com',
     subtitle: 'We reply within 24 hours',
     href: 'mailto:info@checkmyvan.com',
-  },
-  {
-    icon: MapPin,
-    title: 'Visit Us',
-    value: '24 Meridian Way, London',
-    subtitle: 'SW18 4QL',
-    href: '#facility',
   },
   {
     icon: Clock,
@@ -112,8 +103,8 @@ export default function ContactPage() {
       <section className="relative pt-28 pb-14 sm:pt-32 sm:pb-20 bg-navy overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/8986177/pexels-photo-8986177.jpeg?auto=compress&cs=tinysrgb&w=2560&h=1440&q=90&dpr=2"
-            alt="Technician checking a vehicle"
+            src="https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=2560&h=1440&q=90&dpr=2"
+            alt="Campervan on a scenic coastline"
             fill
             sizes="100vw"
             className="object-cover opacity-45"
@@ -128,8 +119,8 @@ export default function ContactPage() {
             We&apos;re Here to Help
           </h1>
           <p className="text-sm sm:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-            Have a question about a van, campervan, or motorhome inspection?
-            Contact our team for help choosing the right check. We will get back to
+            Have a question about a Digital PDF Report for a van, campervan, or motorhome?
+            Contact our team for help choosing a report. We will get back to
             you within 24 hours.
           </p>
         </div>
@@ -158,7 +149,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form + Facility */}
+      {/* Contact Form + Digital Report Information */}
       <section className="py-12 sm:py-24 bg-gradient-to-b from-white to-secondary/30">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
@@ -307,46 +298,24 @@ export default function ContactPage() {
               </div>
             </Reveal>
 
-            {/* Facility Information */}
+            {/* Digital Report Information */}
             <Reveal direction="right">
-              <div id="facility">
-                <div className="rounded-2xl sm:rounded-3xl bg-navy p-5 sm:p-8">
-                  <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <Building2 className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                    <h3 className="text-lg sm:text-xl font-bold font-display text-white">Our Facility</h3>
-                  </div>
-                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm">
-                    <div className="flex items-start gap-3 text-white/70">
-                      <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
-                      <span>24 Meridian Way, London<br />SW18 4QL</span>
-                    </div>
-                    <div className="flex items-start gap-3 text-white/70">
-                      <Car className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
-                      <span>Free parking on-site, with dedicated bays for vans and motorhomes. Easy access from the A3 and South Circular.</span>
-                    </div>
-                    <div className="flex items-start gap-3 text-white/70">
-                      <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
-                      <span>
-                        <strong className="text-white">Customer support:</strong> Available 24/7
-                      </span>
-                    </div>
-                  </div>
-                  <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-white/10">
-                    <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
-                      <div>
-                      <div className="text-xl sm:text-2xl font-bold font-display text-primary">3</div>
-                      <div className="text-[10px] sm:text-xs text-white/50">Vehicle Types</div>
-                      </div>
-                      <div>
-                      <div className="text-xl sm:text-2xl font-bold font-display text-primary">6</div>
-                      <div className="text-[10px] sm:text-xs text-white/50">Inspection Services</div>
-                      </div>
-                      <div>
-                      <div className="text-xl sm:text-2xl font-bold font-display text-primary">2</div>
-                      <div className="text-[10px] sm:text-xs text-white/50">Ways to Inspect</div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="rounded-2xl sm:rounded-3xl bg-navy p-5 sm:p-8">
+                <div className="flex items-center gap-3 mb-4 sm:mb-6">
+                  <FileText className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                  <h3 className="text-lg sm:text-xl font-bold font-display text-white">Digital PDF Reports</h3>
+                </div>
+                <p className="text-sm leading-relaxed text-white/70">
+                  Choose a report for your van, campervan, or motorhome. Your PDF
+                  is sent by email within 1 hour of ordering.
+                </p>
+                <p className="mt-4 rounded-xl border border-primary/20 bg-primary/10 p-4 text-sm leading-relaxed text-white/80">
+                  CheckMyVan provides digital reports only. We do not offer
+                  physical inspections, vehicle testing, or technician visits.
+                </p>
+                <div className="mt-5 flex items-center gap-3 border-t border-white/10 pt-5 text-sm text-white/70">
+                  <Clock className="h-4 w-4 text-primary" />
+                  <span>Questions? Email info@checkmyvan.com</span>
                 </div>
               </div>
             </Reveal>
