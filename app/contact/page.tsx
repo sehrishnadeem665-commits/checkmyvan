@@ -129,7 +129,7 @@ export default function ContactPage() {
       {/* Contact Info Cards */}
       <section className="py-10 sm:py-16 bg-white border-b border-border">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
             {contactInfo.map((info, i) => (
               <Reveal key={info.title} delay={i * 100}>
                 <a

@@ -18,21 +18,24 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
+
 const pricingPlans = [
   {
     name: 'Basic',
     price: 40,
     period: 'per report',
-    description: 'Essential Digital PDF Report',
+    description: 'Essential Digital Vehicle Report',
     icon: ShieldCheck,
     badge: 'Best for budget',
     features: [
-      'Safety-topic overview',
-      'Brake and tyre information',
-      'Lights and signals information',
+      'Vehicle identification details',
+      'Available vehicle specifications',
+      'MOT history information',
+      'Mileage records where available',
+      'Tax and road status information',
       'Basic Digital PDF Report',
       '1 vehicle per order',
-      'Report within 1 hour',
+      'Digital report delivery',
     ],
     excluded: [],
     cta: 'Purchase Basic',
@@ -42,17 +45,19 @@ const pricingPlans = [
     name: 'Standard',
     price: 50,
     period: 'per report',
-    description: 'Detailed Digital PDF Report',
+    description: 'Detailed Digital Vehicle Report',
     icon: Sparkles,
     badge: 'Most popular',
     features: [
-      '150+ report-topic checklist',
-      'Safety-topic overview',
-      'OBD-II information',
+      'Everything in Basic',
+      'Available vehicle history records',
+      'Outstanding finance information (where available)',
+      'Write-off status information (where available)',
+      'Stolen vehicle status (where available)',
+      'Mileage discrepancy information',
+      'MOT history and previous test results',
       'Detailed Digital PDF Report',
-      'Repair cost information',
-      'Market value information',
-      'Report within 1 hour',
+      'Digital report delivery',
     ],
     excluded: [],
     cta: 'Purchase Standard',
@@ -62,24 +67,27 @@ const pricingPlans = [
     name: 'Premium',
     price: 60,
     period: 'per report',
-    description: 'Comprehensive Digital PDF Report',
+    description: 'Comprehensive Digital Vehicle Report',
     icon: Award,
     badge: 'Complete package',
     features: [
-      '200+ report-topic checklist',
       'Everything in Standard',
-      'Engine and mechanical information',
-      'Fluid and filter information',
-      'Battery and charging-system information',
-      'Motorhome habitation report option',
-      'Phone consultation',
-      'Digital PDF Report within 1 hour',
+      'Extended vehicle information',
+      'Detailed vehicle specification data',
+      'Available diagnostic data analysis',
+      'Additional vehicle status information',
+      'Market value information (where available)',
+      'Import and export information (where available)',
+      'EV & hybrid vehicle information (where available)',
+      'Comprehensive Digital PDF Report',
+      'Priority report processing',
     ],
     excluded: [],
     cta: 'Purchase Premium',
     popular: false,
   },
 ];
+
 
 const addOns = [
   { name: 'EV Van Battery Health Digital PDF Report', price: '£49' },
@@ -236,55 +244,6 @@ export default function PricingPage() {
                   </div>
                 ))}
               </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Comparison Table */}
-      <section className="py-12 sm:py-24 bg-white">
-        <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Compare Plans"
-            title="Detailed Report Comparison"
-            description="Compare the topics and information included in each Digital PDF Report package."
-            className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"
-          />
-
-          <Reveal>
-            <div className="mt-8 sm:mt-12 overflow-x-auto rounded-2xl border border-border shadow-lg">
-              <table className="w-full min-w-[640px]">
-                <thead>
-                  <tr className="bg-navy">
-                    <th className="text-left p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm">Feature</th>
-                    <th className="text-center p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm">Basic</th>
-                    <th className="text-center p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm bg-primary/30">Standard</th>
-                    <th className="text-center p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm">Premium</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparison.map((row, i) => (
-                    <tr
-                      key={row.feature}
-                      className={cn(
-                        'border-t border-border',
-                        i % 2 === 0 ? 'bg-secondary/20' : 'bg-white'
-                      )}
-                    >
-                      <td className="text-left p-2.5 sm:p-5 text-xs sm:text-sm font-medium text-navy">{row.feature}</td>
-                      <td className="text-center p-2.5 sm:p-5 text-xs sm:text-sm text-muted-foreground">
-                        <CompareCell value={row.basic} />
-                      </td>
-                      <td className="text-center p-2.5 sm:p-5 text-xs sm:text-sm text-muted-foreground bg-primary/5">
-                        <CompareCell value={row.standard} />
-                      </td>
-                      <td className="text-center p-2.5 sm:p-5 text-xs sm:text-sm text-muted-foreground">
-                        <CompareCell value={row.premium} />
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
             </div>
           </Reveal>
         </div>

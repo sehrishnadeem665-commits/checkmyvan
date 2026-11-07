@@ -16,9 +16,6 @@ const footerLinks = {
   support: [
     { label: 'FAQs', href: '/#faq' },
     { label: 'How It Works', href: '/#process' },
-    { label: 'Terms of Service', href: '/terms-of-service' },
-    { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Refund Policy', href: '/refund-policy' },
   ],
 };
 

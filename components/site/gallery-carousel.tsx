@@ -8,7 +8,7 @@ import { SectionHeading } from '@/components/site/section-heading';
 const galleryImages = [
   {
     src: 'https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    title: 'Pre-Purchase PDF Report',
+    title: 'Purchase PDF Report',
   },
   {
     src: 'https://images.pexels.com/photos/594384/van-vw-travel-trip-594384.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',

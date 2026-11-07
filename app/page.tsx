@@ -18,7 +18,6 @@ import {
 import { HeroCarousel } from '@/components/site/hero-carousel';
 import { GalleryCarousel } from '@/components/site/gallery-carousel';
 import { ProcessCarousel } from '@/components/site/process-carousel';
-import { HomeServiceExplorer } from '@/components/site/home-service-explorer';
 import { SectionHeading } from '@/components/site/section-heading';
 import { Counter } from '@/components/site/counter';
 import { Reveal } from '@/components/site/reveal';
@@ -36,12 +35,12 @@ import { StructuredData } from '@/components/site/structured-data';
 const services = [
   {
     icon: Search,
-    title: 'Pre-Purchase PDF Report',
+    title: 'Purchase PDF Report',
     description:
       'A digital report to help you review key vehicle information before buying a van, campervan, or motorhome.',
     features: ['200+ report topics', 'Clear digital format', 'Market value information'],
     image:
-      'https://images.pexels.com/photos/7476268/pexels-photo-7476268.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80',
   },
   {
     icon: ShieldCheck,
@@ -50,7 +49,7 @@ const services = [
       'A digital report covering important road-safety topics for vans, campervans, and motorhomes.',
     features: ['Brake and tyre topics', 'Lights and signals', 'Safety information'],
     image:
-      'https://images.pexels.com/photos/594384/van-vw-travel-trip.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.pexels.com/photos/594384/van-vw-travel-trip-594384.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   },
   {
     icon: Cpu,
@@ -59,7 +58,7 @@ const services = [
       'A digital report explaining diagnostic topics and common fault-code information for motorised vehicles.',
     features: ['Fault-code information', 'System overview', 'Clear explanations'],
     image:
-      'https://images.pexels.com/photos/2580312/pexels-photo-2580312.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80',
   },
   {
     icon: Gauge,
@@ -68,7 +67,7 @@ const services = [
       'A digital report covering MOT and emissions information for eligible motor vehicles.',
     features: ['MOT information', 'Emissions topics', 'Digital PDF format'],
     image:
-      'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80',
   },
   {
     icon: HomeIcon,
@@ -77,7 +76,7 @@ const services = [
       'A digital report covering motorhome living-area topics such as gas, electrics, water, and damp.',
     features: ['Gas and electrics', 'Damp information', 'Water systems'],
     image:
-      'https://images.pexels.com/photos/23153101/pexels-photo-23153101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=800&q=80',
   },
   {
     icon: Zap,
@@ -86,7 +85,7 @@ const services = [
       'A digital report covering battery-health and charging-system information for electric and hybrid vehicles.',
     features: ['Battery information', 'Charging systems', 'Inverter overview'],
     image:
-      'https://images.pexels.com/photos/594384/van-vw-travel-trip.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+      'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80',
   },
 ];
 
@@ -300,7 +299,6 @@ export default function Home() {
 
       <ProcessCarousel />
 
-      <HomeServiceExplorer />
       <GalleryCarousel />
 
       {/* Digital Report Benefits */}
